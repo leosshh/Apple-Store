@@ -1,0 +1,23 @@
+#include<iostream.h>
+#include<conio.h>
+
+main()
+{	        clrscr();
+        	double price=35,qty=0,total=0,disc=0,net_total=0,pay=0,chg=0;
+        	cout<<"********\nWELCOME TO BSINFOTECH 301B\nAPPLE STORE\n********\nAPPLE PRICE: P35\n";
+        	cout<<"\nEnter Quantity:";
+        	cin>>qty;
+        	total=price*qty;
+        	cout<<"Total:"<<total;
+        	disc=total/10;
+        	cout<<"\nDiscount(10%):"<<disc;
+        	net_total=total-disc;
+        	cout<<"\nNet Total:"<<net_total;
+        	cout<<"\nPayment:";
+        	cin>>pay;
+        	chg=pay-net_total;
+        	cout<<"Change:\n"<<chg;
+        	cout<<"\nThank You! Have a nice day.";
+        	getch();
+
+}
